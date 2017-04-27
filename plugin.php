@@ -5,7 +5,7 @@ Plugin URI: https://github.com/johnellmore/ldap-user-authentication
 Description: Invisible WordPress plugin which uses allows LDAP users to authenticate.
 Author: John Ellmore
 Author URI: http://johnellmore.com/
-Version: 0.1
+Version: 1.0
 */
 
 // load dependencies and project files

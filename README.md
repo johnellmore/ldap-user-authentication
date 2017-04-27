@@ -2,8 +2,6 @@
 
 Invisible WordPress plugin which uses allows LDAP users to authenticate.
 
-*This plugin is in pre-alpha development and is currently non-functional.*
-
 ## Requirements
 
 You'll need [PHP's LDAP module](http://php.net/manual/en/ldap.installation.php)
@@ -12,7 +10,20 @@ compiled and installed on your server.
 ## Configuration
 
 The plugin is configured using `define()` statements in your site's
-`wp-config.php` file.
+`wp-config.php` file. There are three configuration constants that can be defined:
+
+```php
+// required; the server to authenticate to
+define('EMLDAP_LDAP_SERVER', 'your.ldap.server.net');
+
+// required; the base DN (designated name) of the user search
+define('EMLDAP_LDAP_DN', 'DC=yourorghere,DC=net');
+
+// optional; the role that newly created users should be given (default subscriber)
+define('EMLDAP_NEW_USER_ROLE', 'editor');
+
+/* That's all, stop editing! Happy blogging. */
+```
 
 ## Login Process
 
