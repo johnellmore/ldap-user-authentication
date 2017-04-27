@@ -9,6 +9,8 @@ Version: 0.1
 */
 
 // load dependencies and project files
+require_once('src/Config.php');
+require_once('src/LDAPConnection.php');
 require_once('src/Plugin.php');
 
 // kick off the plugin
